@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # set the sound file to be played
-SOUND_FILE = ~/whitenoise.mp3
+SOUND_FILE = /home/pi/pi-white-noise/whitenoise.mp3
 
 # other variables
 TEMP_STORAGE=/tmp
@@ -28,5 +28,5 @@ exit 1; }
 
 # play wite noise on infinite loop
 echo "$NOW - Starting noise playback" >> $LOG_FILE
-amixer cset numid=3 1 &>/dev/null
-mpg123 --loop -1 --gapless --quiet "$TEMP_STORAGE/${SOUND_FILE##*/}" &>/dev/null &
+amixer cset numid=2 1 &>/dev/null
+mpg123 -a default:CARD=Headphones --loop -1 --gapless --quiet "$TEMP_STORAGE/${SOUND_FILE##*/}" &>/dev/null &
