@@ -4,7 +4,7 @@ Pi Noise Machine turns a Raspbery Pi a white noise generator. It is intended to 
 
 The included white noise file is from the [Misophonia Institute](https://misophoniainstitute.org/). Any mp3 file can be used by changing the `SOUND_FILE` in `auto-player.sh`.
 
-This project is based on [sleepnoise by graysky2](https://github.com/graysky2/sleepnoise)
+This project is based on [sleepnoise by graysky2](https://github.com/graysky2/sleepnoise).
 
 ## Dependencies
 Pi Noise Machine requires:
