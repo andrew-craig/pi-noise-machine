@@ -13,12 +13,10 @@ Pi Noise Machine requires:
 
 You can install both with:
 ```
-sudo apt install mpg123 alsa-utils -y
-v
+sudo apt install mpg123 alsa-utils
+```
 
 ## Installation
-
-Note: This installation assumes the git repository is cloned to /home/pi
 
 Make `auto-player.sh` executable:
 ```
@@ -34,3 +32,7 @@ Add a new line at the end of the file:
 ```
 @reboot /home/pi/pi-noise-machine/auto-player.sh
 ```
+
+Note: This installation assumes the git repository is cloned to /home/pi. If you are storing the script and audio file in a different location you'll need to:
+1. replace `/home/pi/pi-noise-machine` with the actual path when editing `crontab`
+2. change `SOURCE_DIRECTORY` in `auto-player.sh` to the directory you are using
