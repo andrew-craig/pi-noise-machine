@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # set the source directory
-SOURCE_DIRECTORY = /home/pi/pi-white-noise
+SOURCE_DIRECTORY=/home/pi/pi-noise-machine
 
 # set the sound file to be played
-SOUND_FILE = whitenoise.mp3
+SOUND_FILE=whitenoise.mp3
 
 # other variables
 TEMP_STORAGE=/tmp

@@ -12,17 +12,25 @@ Pi Noise Machine requires:
 * [alsa-utils](https://github.com/alsa-project/alsa-utils)
 
 You can install both with:
-    sudo apt install mpg123 alsa-utils -y
+```
+sudo apt install mpg123 alsa-utils -y
+v
 
 ## Installation
 
 Note: This installation assumes the git repository is cloned to /home/pi
 
 Make `auto-player.sh` executable:
-    $ chmod +x auto-player.sh
+```
+$ chmod +x auto-player.sh
+```
 
 Edit the crontab file by running:
-    $ crontab -e
+```
+$ crontab -e
+```
 
 Add a new line at the end of the file:
-    @reboot sh /home/pi/pi-noise-machine/auto-player.sh
+```
+@reboot /home/pi/pi-noise-machine/auto-player.sh
+```
